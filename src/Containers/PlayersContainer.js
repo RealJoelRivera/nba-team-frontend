@@ -11,8 +11,7 @@ class PlayersContainer extends Component {
   }
 
   showPlayers = () => {
-    const players = this.props.players.filter(player => player.name.toLowerCase().includes(this.state.search.toLowerCase()))
-    .map(player => < PlayerCard player={player} key={player.id} clickHandler={this.props.clickHandler} />)
+    const players = this.props.players.filter(player => player.name.toLowerCase().includes(this.state.search.toLowerCase())).map(player => < PlayerCard player={player} key={player.id} clickHandler={this.props.clickHandler} />)
     return players
   }
 
@@ -23,7 +22,6 @@ class PlayersContainer extends Component {
   }
 
   render () {
-    console.log(this.state.search)
 
     return (
       <React.Fragment>

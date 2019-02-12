@@ -10,7 +10,7 @@ export default class PlayerCard extends Component {
       < Card onClick={() => this.props.clickHandler(this.props.player)} >
         < Card.Content >
             < Card.Header >{this.props.player.name}</ Card.Header >
-            <Image src='https://www.how-to-draw-funny-cartoons.com/image-files/cartoon-basketball-3.gif' />
+            <Image src={this.props.player.img} />
             < Card.Description >Points: {this.props.player.points}</ Card.Description >
             < Card.Description >FG Percentage: {this.props.player.FG_percentage}</ Card.Description >
             < Card.Description >3Pt Percentage: {this.props.player.three_point_percentage}</ Card.Description >

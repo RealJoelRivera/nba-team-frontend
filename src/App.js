@@ -52,7 +52,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        < YourTeamContainer yourTeam={this.state.yourTeam} clickHandler={this.removeFromTeam} />
+        < YourTeamContainer yourTeam={this.state.yourTeam} clickHandler={this.removeFromTeam}/>
         <br />
         < PlayersContainer players={this.state.players} clickHandler={this.addToTeam} />
       </div>

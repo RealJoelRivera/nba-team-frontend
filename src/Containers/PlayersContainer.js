@@ -26,7 +26,7 @@ class PlayersContainer extends Component {
     return (
       <React.Fragment>
         <h1>PLAYERS</h1>
-        < Search search={this.state.search} changeHandler={this.inputValue}/>
+        < Search search={this.state.search} changeHandler={this.inputValue} />
         < Card.Group >
           {this.showPlayers()}
         </ Card.Group >
